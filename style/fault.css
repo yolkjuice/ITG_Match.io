@@ -3,7 +3,28 @@
     margin: 0;
 }
 
-ul {
+td {
+    height: 700px;
+    /* border-right: 1px solid #000; */
+    margin-right: 10px;
+}
+
+dd {
+    margin-left: 40px;
+}
+
+.resume {
+    height: 700px;
+    background-color: #ccc;
+}
+
+.begin {
+    height: 700px;
+    background-color: purple;
+    margin: 0 auto;
+}
+
+/* ul {
     padding-top: 10px;
     height: 40px;
     list-style-type: none;
@@ -29,7 +50,7 @@ li a:hover:not(.active) {
 li a.active {
     color: gray;
     background-color: blue;
-}
+} */
 
 /* .box-col {
     display: flex;
@@ -42,12 +63,6 @@ li a.active {
     justify-content: center;
     align-items: start;
 } */
-
-.begin {
-    height: 700px;
-    background-color: purple;
-    margin: 0 auto;
-}
 
 /* .photo {
     width: 100px;
