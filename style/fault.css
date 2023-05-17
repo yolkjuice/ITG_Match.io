@@ -3,3 +3,68 @@
     margin: 0;
 }
 
+ul {
+    padding-top: 10px;
+    height: 40px;
+    list-style-type: none;
+    background-color: #1E90FF;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    margin-right: 10px;
+    text-align: justify;
+}
+
+li a {
+    display: block;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: gray;
+    background-color: blue;
+}
+
+/* .box-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+} */
+
+.begin {
+    height: 700px;
+    background-color: purple;
+    margin: 0 auto;
+}
+
+/* .photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #f5f5f5;
+}
+
+.gc-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #f5f5f5;
+    background-color: #cdcdcd;
+    margin-right: 20px;
+} */
+
+/* .item {
+    margin-bottom: 50px;
+} */

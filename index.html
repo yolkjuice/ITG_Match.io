@@ -7,12 +7,53 @@
     <title>web01</title>
     <link rel="stylesheet" href="./style/fault.css">
     <link rel="stylesheet" href="./style/sass_style.css">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <!-- 盒子 -->
-    <div class="box begin">
-         <img src="./img/shushu.png" alt="我的照片" class="photo">
-         <button><a href="#">开始浏览</a></button>
+    <!-- 网格系统 3-6-3 -->
+    <div class="container">
+        <!-- 导航栏 -->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-12" s>
+                <ul>
+                    <li><a href=""><img src="" alt="logo"></a></li>
+                    <li><a href="">个人简介</a></li>
+                    <li><a href="">学习笔记</a></li>
+                    <li><a href="">自我表达</a></li>
+                </ul>
+            </div>
+            <div class="col"></div>
+        </div>
+        <!-- 导航栏 -->
+        <!-- 内容 -->
+        <div class="row">
+            <div class="col"></div>
+
+            <!-- 盒子 -->
+            <div class="col-6 box box-col begin">
+                <div style="height: 250px;"></div>
+                <div  class=" box box-col" style="height: 450px;">
+                    <div class="item i01">
+                        <img src="./img/shushu.png" alt="我的照片" class="photo">
+                    </div>
+                    <div class="item i02">
+                        <button class="to-begin"><a href="#">开始浏览</a></button>
+                    </div>
+                    <div class="item box box-row">
+                        <a href="#"><img src="./img/GitHub-Logo.png" alt="github" class="gc-link"></a>
+                        <a href="#"><img src="./img/csdn.png" alt="csdn" class="gc-link"></a>
+                        <a href="#"><img src="./img/13A省略.png" alt="..." class="gc-link"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- 盒子 -->
+
+            <div class="col"></div>
+        </div>
+        <!-- 内容 -->
     </div>
+     <!-- 网格系统3-6-3 -->
 </body>
 </html>
