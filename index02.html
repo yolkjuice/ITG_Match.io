@@ -34,11 +34,11 @@
             <div class="col-10 box box-row">
                 <!-- 笔记导航栏 -->
                 <div class="notenav">
-                    <button>DAY1</button>
-                    <button>DAY2</button>
-                    <button>DAY3</button>
-                    <button>DAY5</button>
-                    <button>DAY6</button>
+                    <button onclick="loadJSON01()">DAY1</button>
+                    <button onclick="loadJSON02()">DAY2</button>
+                    <button onclick="loadJSON03()">DAY3</button>
+                    <button onclick="loadJSON04()">DAY4</button>
+                    <button onclick="loadJSON05()">DAY5</button>
                 </div>
                 <!-- 笔记导航栏 -->
                 
@@ -54,4 +54,25 @@
     </div>
     <!-- 网格系统 -->
 </body>
+<!-- 装载内容 -->
+<script src="./js/jquery.js"></script>
+<script>
+    function loadJSON01() {
+        $.getJSON("./note/day1.json", {}, function(data){
+            console.log(1);
+            console.log(data.length);
+            for(var i = 0; i < data.length; i++) {
+                $("#note-container").append("<h2>" + data[i].title + "</h2>");
+            }
+        });
+    }
+</script>
+<!-- 引入要放在后面 -->
+<script type="text/javascript" src="./note/day1.json"></script>
+<!-- 装载内容 -->
 </html>
+<!-- 
+{
+    “title": ""
+    "content": ""
+}， -->
