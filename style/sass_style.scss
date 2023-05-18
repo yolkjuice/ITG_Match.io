@@ -1,3 +1,4 @@
+// index
 .box {
   &.box-col {
     display: flex;
@@ -7,11 +8,10 @@
 &.box-row {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: start;
   }
 }
 
+//开始页各项目
 .item {
   &.i01{
     margin-bottom: 70px;
@@ -19,8 +19,13 @@
   &.i02{
     margin-bottom: 150px;
   }
+  &.i03{
+    justify-content: center;
+    align-items: start;
+  }
 }
 
+// 导航栏
 .mynav {
   ul {
     padding-top: 10px;
@@ -91,6 +96,8 @@ button {
   }
 }
 
+// index01
+//简介左右部分
 .left-td {
   float: left;
   display: inline;
@@ -98,4 +105,46 @@ button {
 
 .right-td {
   color: #000;
+}
+
+// index02
+// 笔记导航栏
+.notenav {
+  position: fixed;
+  overflow: hidden;
+  background-color: #fff;
+  width: 200px;
+  height: 500px;
+  border: 1px solid #000;
+  border-radius: 10px;
+
+  button {
+    display: block;
+    width: 80%;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #fff;
+    border: 0;
+    transition: linear 0.5s;
+
+    &:hover {
+      background-color: #1E90FF;
+      width: 90%;
+      height: 70px;
+    }
+  }
+}
+
+.note-container {
+  overflow: auto;
+  background-color: yellowgreen; 
+  width: 600px;
+  height: 1000px;
+  margin-left: 300px;
+  border: 1px solid #000;
+  border-radius: 10px;
 }

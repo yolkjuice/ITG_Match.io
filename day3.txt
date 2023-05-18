@@ -1,0 +1,39 @@
+CSS
+Flex布局：规定一个flex容器内的元素按主轴和交叉轴方式对齐
+	1.flex布局使用：display：flex
+	
+	2.对齐方式：
+	按主轴 justify-content: 
+		start 主轴起点
+		center 主轴中点
+		end 主轴终点
+		space-between 主轴两侧
+		space-around：间隔相等
+	
+	按交叉轴 align-items: 
+		start 交叉轴起点
+		center 交叉轴中点
+		end 交叉轴终点
+		stretch 默认值
+	
+	3.换行：flex-wrap: 
+		nowrap（默认值）不换行
+		wrap 换行
+		wrap-reverse 反转换行
+
+Item项目：flex容器里的元素
+	1.排列顺序：order: number>=0 数字越小，顺序越前
+		指定元素：:first-child/last-child/nth-child(n)
+
+	2.放大比例：flex-grow: 0（默认值）/1 剩余空间时是否放大
+	
+	3.缩小比例：flex-shrink: 1（默认值）/0 空间不足时是否缩小
+
+	4.独立对齐方式：justify/align-self:
+		auto（默认值）：继承align-items/stretch
+		flex-start 对应轴起点
+		center 对应轴中点
+		flex-end 对应轴终点
+		*也可指定元素
+
+课外资源:Bootstrap 简洁、直观、强悍的前端开发框架

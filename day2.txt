@@ -1,0 +1,37 @@
+CSS -- 网页的层叠样式
+
+CSS的三种定义地方：
+	1.外部式 <link rel="stylesheet" href="style/default.css">
+	2.内部式 <style>...</style>
+	3.内联式 <xxx style="style">
+
+CSS的三种定义方式：
+	1.元素选择器 标签名 {}
+	2.类选择器  .className {}
+	3.id选择器 #idName {}
+
+CSS的三种调用方式：
+	1.直接用于标签
+	2.类 <... class="">
+	3.id <... id="">
+
+CSS选择器组合方式：
+	1.elemt.className/#idName 类名或id名的元素
+	2.并列 elemt1/elemt2/elemt3 享有一样的样式
+	3.子元素选择器 paret > child 父元素下的所有直接子元素
+	4.后代选择器 elemt1 elemt2 elemt1元素下的所有elemt2元素
+	
+CSS常见的样式：
+	1.盒子模型：每个元素都是一个盒子
+	属性：margin 外边距/border 边框/ padding 内边距/content 内容
+	
+	2.媒体请求：针对不同媒体类型可以定制不同的样式规则
+	@media (样式变化时的尺寸) {样式...}
+	
+	3.文本设置：
+	font-size 文本大小
+	font-family 文本类型
+	font-style	文本格式
+	font-weight 文本粗细
+	text-transform 文本大小写转换
+	text-align 文本对齐方式
