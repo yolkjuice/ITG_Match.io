@@ -1,0 +1,15 @@
+[   
+    
+    {
+        "name": "HTML",
+        "title": "Content & Structure"
+    },
+    {
+        "name": "CSS",
+        "title": "Presentation"
+    },
+    {
+        "name": "JS",
+        "title": "Logic & Behaviour"
+    }
+]
