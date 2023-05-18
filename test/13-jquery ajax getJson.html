@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Demo 4 - jQuery</title>
+</head>
+
+<body>
+    <h2>AJAX Demo 4 - jQuery - $.getJSON</h2>
+    <button type="button" onclick="loadJSON()">请求 JSON 数据</button>
+    <div id="myDiv"></div>
+
+    <script src="./js/jquery.js"></script>
+    <script>
+        function loadJSON() {
+            /*
+               $.getJSON
+			       语法：
+				       $.getJSON("请求地址","请求参数",function(形参){
+					       // ...
+				       });
+			       注意：getJSON 要求返回的数据格式必须满足 json 格式 
+             */ 
+            $.getJSON("https://github.com/yolkjuice/ITG_Match.io/blob/master/test/ajax_json.json", {}, function(data){
+                for(var i = 0; i < data.length; i++) {
+                    $("#myDiv").append("<p title='"+data[i].title+"'>"+data[i].name+"</p>");
+                }
+            });
+        }
+    </script>
+    <!-- 引入要放在后面 -->
+    <script type="text/javascript" src="https://github.com/yolkjuice/ITG_Match.io/blob/master/test/ajax_json.json"></script>
+</body>
+
+</html>
