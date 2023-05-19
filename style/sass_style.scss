@@ -31,33 +31,49 @@
   }
 }
 
+//状态栏
+.status {
+  // display: none;
+  width: 400px;
+  height: 100px;
+  background-color: #e6f4ff;
+  border-radius: 50px;
+
+  // img{
+
+  // }
+}
+
 // 导航栏
 .mynav {
   ul {
     padding-top: 10px;
     height: 60px;
     list-style-type: none;
-    background-color: #1E90FF;
+    background-color: #1677ff;
     border-radius: 10px;
-    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",Arial,
-    "Liberation Sans";
+    opacity: 0.8;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 li {
     float: left;
     margin-right: 10px;
-    padding: 0 20px;
 }
 
 li a {
+    width: 80px;
     display: block;
     color: white;
     text-decoration:none;
     padding-top: 10px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 li a:hover:not(.active) {
-    background-color: #ddd;
+    background-color:#fff;
+    color: #1E90FF;
 }
 
 li a.active {
@@ -70,7 +86,7 @@ img {
   //导航栏LOGO
   &.nav-logo {
     width: 30px;
-    margin-right: 5px;
+    margin-right: 10px;
   }
   // 开始页头像
   &.photo {
@@ -108,12 +124,40 @@ img {
 
 button {
   // 开始页按钮
+  background-color: #fff;
   &.to-begin{
-    width: 100px;
+    width: 150px;
     height: 50px;
-    margin-left: 268px;
+    margin-left: 243px;
     border: 2px solid white;
     border-radius: 20px;
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+      transition: 1s;
+      &::after{
+        color: #1E90FF;
+        font-weight: 600;
+        content: '»';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 1s;
+    }
+    }
+    
+    &:hover {
+      a{
+        padding-right: 25px;
+        &::after {
+          opacity: 1;
+          right: 0;
+        }
+      }
+    }
   }
 }
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .bg-img {
   background-image: url("../img/preview.jpg");
   background-repeat: no-repeat;
@@ -24,27 +25,38 @@
   align-items: start;
 }
 
+.status {
+  width: 400px;
+  height: 100px;
+  background-color: #e6f4ff;
+  border-radius: 50px;
+}
+
 .mynav ul {
   padding-top: 10px;
   height: 60px;
   list-style-type: none;
-  background-color: #1E90FF;
+  background-color: #1677ff;
   border-radius: 10px;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, "Liberation Sans";
+  opacity: 0.8;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .mynav li {
   float: left;
   margin-right: 10px;
-  padding: 0 20px;
 }
 .mynav li a {
+  width: 80px;
   display: block;
   color: white;
   text-decoration: none;
   padding-top: 10px;
+  border-radius: 10px;
+  text-align: center;
 }
 .mynav li a:hover:not(.active) {
-  background-color: #ddd;
+  background-color: #fff;
+  color: #1E90FF;
 }
 .mynav li a.active {
   color: gray;
@@ -53,7 +65,7 @@
 
 img.nav-logo {
   width: 30px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 img.photo {
   width: 100px;
@@ -81,12 +93,38 @@ img.nav-title {
   width: 30px;
 }
 
+button {
+  background-color: #fff;
+}
 button.to-begin {
-  width: 100px;
+  width: 150px;
   height: 50px;
-  margin-left: 268px;
+  margin-left: 243px;
   border: 2px solid white;
   border-radius: 20px;
+}
+button.to-begin a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  transition: 1s;
+}
+button.to-begin a::after {
+  color: #1E90FF;
+  font-weight: 600;
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 1s;
+}
+button.to-begin:hover a {
+  padding-right: 25px;
+}
+button.to-begin:hover a::after {
+  opacity: 1;
+  right: 0;
 }
 
 .left-td {
