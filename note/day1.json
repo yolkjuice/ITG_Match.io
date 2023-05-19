@@ -1,8 +1,8 @@
 [
 
 	{
-		"title": "DAY1",
-		"content": "",
+		"title": "DAY 1",
+		"content": ""
 	},
 	{
 		"title": "HTML -- 网页的骨架",
@@ -10,10 +10,10 @@
 	},
 	{
 		"title": "HTML --标签 -- 构成网页的元素",
-		"content": "html标签：定义一个网页/头部/主体 \n\t<html></html>\n\t<head></head>\n\t<bofy></body>\n\n块级标签 div/行内标签 span:或者使用属性style=\"display:inline;\" 以行内显示style=\"dispaly:block;\"  以块级显示\n\n链接标签 a:连接到锚点  跳转到改网页某部分\n\t<span name=\"xxx\"></span>\n\t<div id=\"xxx\"></div>\n\t<a href=\"#xxx\"></a>\n\n表单标签 form/input：收集信息\n\t<form></form>\n\t<input>\n\n按钮标签 button：创建一个按钮\n\t<button></button>\n\n格式标签 b/i/u/del/sub/sup：设置字体格式\n\tb bold 加粗\n\ti 斜体\n\tu 下划线\n\tdel 删除线\n\tsub/sup 下标/上标\n\n图片标签 img：插入图片\n\t<img></img>\n\n列表标签 ul/ol/li：信息集成列表\n\tul 无序列表 \n\tol 有序列表\n\tli 列表项\n\n表格标签 table/tr/th/td：创建表格\n\ttable 总体\n\ttr 表行\n\tth 表头\n\ttd 单元格\n\n*标签嵌套：\n\t例如：ul>li == <ul><li></li></ul>\n\t\ttr>td == <tr><td></td></tr>",
+		"content": "html标签：定义一个网页/头部/主体 <br>&emsp;html<br>&emsp;head<br>&emsp;body<br><br>块级标签 div/行内标签 span:或者使用属性style=\"display:inline;\" 以行内显示style=\"dispaly:block;\"  以块级显示<br><br>链接标签 a:连接到锚点  跳转到改网页某部分<br>&emsp;span name=\"xxx\"<br>&emsp;div id=\"xxx\"<br>&emsp;a href=\"#xxx\"<br><br>表单标签 form/input：收集信息<br>&emsp;form&emsp;input<br><br>按钮标签 button：创建一个按钮<br>&emsp;button<br><br>格式标签 b/i/u/del/sub/sup：设置字体格式<br>&emsp;b bold 加粗<br>&emsp;i 斜体<br>&emsp;u 下划线<br>&emsp;del 删除线<br>&emsp;sub/sup 下标/上标<br><br>图片标签 img：插入图片<br>&emsp;img<br><br>列表标签 ul/ol/li：信息集成列表<br>&emsp;ul 无序列表 <br>&emsp;ol 有序列表<br>&emsp;li 列表项<br><br>表格标签 table/tr/th/td：创建表格<br>&emsp;table 总体<br>&emsp;tr 表行<br>&emsp;th 表头<br>&emsp;td 单元格<br><br>*标签嵌套：<br>&emsp;例如：ul>li li元素嵌套在ul元素内<br>&emsp;&emsp;tr>td td元素嵌套在tr元素内"
 	},
 	{
 		"title": "属性 -- 标签的简单样式",
-		"content": "样式属性 style=\"width/height/padding/margin/...\"\n\n对齐方式 align=\"left(default)/center/right/justify(调整到合适)\"\n\n表单属性 <form action=\"url\" method=\"get/post\">\n\t<input type=\"表单类型\" name=\"name\" value=\"value\">\n\n按钮属性 <button type=\"按钮类型\">\n\n图片属性 <img src=\"url\" alt=\"替代文字\">\n\n列表属性 <ol type=\"序号形式\">\n\t<ul type=\"序号形式suqare/circle/...\">\n\n表格属性 <table border=\"0(default)/1\" 开启边框>\n\t<td rowspan=\"n\" n列合并 colspan=\"n\" n行合并>",
-	},
+		"content": "样式属性 style=\"width/height/padding/margin/...\"<br><br>对齐方式 align=\"left(default)/center/right/justify(调整到合适)\"<br><br>表单属性 form action=\"url\" method=\"get/post\"<br>&emsp;input type=\"表单类型\" name=\"name\" value=\"value\"<br><br>按钮属性 button type=\"按钮类型\"<br><br>图片属性 <img src=\"url\" alt=\"替代文字\"><br><br>列表属性 <ol type=\"序号形式\"><br>&emsp;<ul type=\"序号形式suqare/circle/...\"><br><br>表格属性 table border=\"0(default)/1\" 开启边框<br>&emsp;td rowspan=\"n\" n列合并 colspan=\"n\" n行合并"
+	}
 ]

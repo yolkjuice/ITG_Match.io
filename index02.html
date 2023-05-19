@@ -34,17 +34,21 @@
             <div class="col-10 box box-row">
                 <!-- 笔记导航栏 -->
                 <div class="notenav">
-                    <button onclick="loadJSON01()">DAY1</button>
-                    <button onclick="loadJSON02()">DAY2</button>
-                    <button onclick="loadJSON03()">DAY3</button>
-                    <button onclick="loadJSON04()">DAY4</button>
-                    <button onclick="loadJSON05()">DAY5</button>
+                    <div class="box-col"><img src="./img/笔记导航.svg" alt="" class="nav-title"><h5>学习笔记导航</h5></div>
+                    <button type="button" onclick="loadJSON01()">DAY 1</button>
+                    <button type="button" onclick="loadJSON02()">DAY 2</button>
+                    <button type="button" onclick="loadJSON03()">DAY 3</button>
+                    <button type="button" onclick="loadJSON04_1()">DAY 4-1</button>
+                    <button type="button" onclick="loadJSON04_2()">DAY 4-2</button>
+                    <button type="button" onclick="loadJSON05()">DAY 5</button>
                 </div>
                 <!-- 笔记导航栏 -->
                 
                 <!-- 笔记显示 -->
-                <div id="note-container" class="note-container">
-                    111
+                <div class="note-container">
+                    <h4 style="text-align: center; padding-top: 10px;">我的学习笔记</h4>
+                    <div id="note-container" style="width: 700px; margin: auto;">
+                    </div>
                 </div>
                 <!-- 笔记显示 -->
             </div>
@@ -57,18 +61,17 @@
 <!-- 装载内容 -->
 <script src="./js/jquery.js"></script>
 <script>
-    function loadJSON01() {
-        $.getJSON("./note/day1.json", {}, function(data){
-            console.log(1);
-            console.log(data.length);
+    function loadJSON01(){
+        $.getJSON("F://ITG//z-finial//note//day1.json", {}, function(data){
             for(var i = 0; i < data.length; i++) {
-                $("#note-container").append("<h2>" + data[i].title + "</h2>");
+                $("#note-container").append("<h5 class='font-style'>" + data[i].title + "</h5>"+
+                "<p class='font-style'>" + data[i].content + "</p>");
             }
         });
     }
 </script>
 <!-- 引入要放在后面 -->
-<script type="text/javascript" src="./note/day1.json"></script>
+<script type="text/javascript" src="F:\ITG\z-finial\note\day1.json"></script>
 <!-- 装载内容 -->
 </html>
 <!-- 

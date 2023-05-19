@@ -1,3 +1,4 @@
+DAY 3
 CSS
 Flex布局：规定一个flex容器内的元素按主轴和交叉轴方式对齐
 	1.flex布局使用：display：flex

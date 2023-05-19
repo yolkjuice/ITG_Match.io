@@ -1,0 +1,63 @@
+DAY 4-2
+JavaScript -- 让网页动起来
+
+JS基础语法
+	1.JS的放置位置
+	origin 写在html标签上
+	inner 写在script标签中
+	outter 写在外部js文件，通过script标签引入js文件
+	
+	2.JS的变量
+	变量的声明 
+	var a 声明时赋值/先声明再赋值
+	
+	注意点：
+	当变量只声明而未赋值时，则变量的值会返回 undfinded
+	变量要有定义才能使用，若变量未声明就使用，JavaScript 会报错
+	可以在同一条var命令中声明多个变量，例如 var a, b, c
+	若使用 var 重新声明一个已经存在的变量且未赋值，则无效
+	若使用 var 重新声明一个已经存在的变量且赋值，则会覆盖
+	JavaScript 是一种动态类型、弱类型语言，也就是说，变量的类型没有限制，可以赋予各种类型的值
+
+	3.JS变量的数据类型
+	数值 Number
+	字符串 String
+	布尔值 Bool
+	未定义 undefined
+	空 Null
+	对象 Object
+
+	4.JS的数据类型转换
+	函数转换
+	parseInt() 转换成整数
+	parseFloat() 转换成浮点数
+
+	显示转换
+	toString() 数字转换为字符串
+	String() 任意数值转换为字符串
+	数据 +“”  最简单的转字符串的方式
+
+JS的对象：数据的集合
+	1.数组
+	定义
+	var arr = [值1,值2,值3];  // 隐式创建
+	var arr = new Array(值1,值2,值3); // 直接实例化
+	var arr = new Array(size); // 创建数组并指定长度
+	
+	基本操作
+	获取/设置长度 属性 length
+	获取设置元素 下标法 array[index(>=0)]
+	
+	遍历
+	for(var i=0; i<=array.length-1; i++) 不遍历属性
+	for(var index(名称任意) in array) 不遍历索引中的undefined
+	array.forEach(function(element,index) 不遍历属性和索引中的undefined
+	
+	方法
+	.push 添加元素到最后 
+	.unshift 添加元素到最前 
+	.pop 删除最后一项 
+	.shift 删除第一项 
+	.reverse 数组翻转 
+	.join 数组转成字符串 
+	.indexOf 数组元素索引

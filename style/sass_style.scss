@@ -83,6 +83,12 @@ img {
       margin-top: 10px;
       margin-bottom: 50px;
   }
+
+  //笔记导航
+  &.nav-title{
+    float: left;
+    width: 30px;
+  }
 }
 
 button {
@@ -120,31 +126,76 @@ button {
 
   button {
     display: block;
-    width: 80%;
-    height: 50px;
+    width: 60%;
+    height: 30px;
     margin-top: 5px;
-    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-left: 35px;
     border-radius: 20px;
     font-weight: 600;
     text-align: center;
     background-color: #fff;
     border: 0;
-    transition: linear 0.5s;
+    transition: linear 0.3s;
 
     &:hover {
-      background-color: #1E90FF;
-      width: 90%;
-      height: 70px;
+      background-color: #bae0ff;
+      width: 65%;
+      height: 35px;
+      margin-left: 35px;
     }
+  }
+
+  div {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: 600;
+    text-align: center;
   }
 }
 
 .note-container {
   overflow: auto;
   background-color: yellowgreen; 
-  width: 600px;
+  width: 800px;
   height: 1000px;
-  margin-left: 300px;
+  margin-left: 250px;
   border: 1px solid #000;
   border-radius: 10px;
+
+  font-family: Arial, "Microsoft YaHei";
+  line-height: 1.5;
+
+  &.font-style {
+    padding-left: 20px;
+  }
+}
+
+//index03
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); //列三等分
+  grid-template-rows: repeat(3, 1fr); //行三等分
+  gap: 5px;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 3px solid #cdcdcd;
+  padding: 5px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #fff7e6;
+  cursor: pointer;
+}
+
+#result {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
 }
