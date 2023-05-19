@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 5px;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        .cell {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+
+        #result {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="board">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+    <div id="result"></div>
+</body>
+
+<script>
+    const board = ["", "", "", "", "", "", "", "", ""];
+    const cells = document.querySelectorAll(".cell");
+    const resultElement = document.getElementById("result");
+    let currentPlayer = "X";
+    let gameEnded = false;
+
+    function updateGameState(cellIndex) {
+        if (!gameEnded && board[cellIndex] === "") {
+            board[cellIndex] = currentPlayer;
+            renderBoard();
+            if (checkWin(currentPlayer)) {
+                endGame("Player " + currentPlayer + " wins!");
+            } else if (checkDraw()) {
+                endGame("It's a draw!");
+            } else {
+                currentPlayer = currentPlayer === "X" ? "O" : "X";
+                if (currentPlayer === "O") {
+                    setTimeout(makeComputerMove, 500);
+                }
+            }
+        }
+    }
+
+    function checkWin(player) {
+        const winningCombinations = [
+            [0, 1, 2],
+            [3, 4, 5],
+            [6, 7, 8],
+            [0, 3, 6],
+            [1, 4, 7],
+            [2, 5, 8],
+            [0, 4, 8],
+            [2, 4, 6]
+        ];
+
+        for (let i = 0; i < winningCombinations.length; i++) {
+            const [a, b, c] = winningCombinations[i];
+            if (board[a] === player && board[b] === player && board[c] === player) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    function checkDraw() {
+        return board.every(cell => cell !== "");
+    }
+
+    function endGame(message) {
+        gameEnded = true;
+        resultElement.textContent = message;
+    }
+
+    function makeComputerMove() {
+        const emptyCells = board.reduce((acc, cell, index) => {
+            if (cell === "") {
+                acc.push(index);
+            }
+            return acc
+        }
+            , []);
+        if (emptyCells.length > 0) {
+            const randomIndex = Math.floor(Math.random() * emptyCells.length);
+            const computerMove = emptyCells[randomIndex];
+            updateGameState(computerMove);
+        }
+    }
+
+    function renderBoard() {
+        for (let i = 0; i < cells.length; i++) {
+            cells[i].textContent = board[i];
+        }
+    }
+
+    function resetGame() {
+        board.fill("");
+        currentPlayer = "X";
+        gameEnded = false;
+        resultElement.textContent = "";
+        renderBoard();
+    }
+
+    // cells.forEach((cell, index) => {
+    //     cell.addEventListener("click", () => updateGameState(index));
+    // });
+    cells.forEach(function(cell, index) {   //添加棋盘的点击事件监听事件
+    console.log(cell, index);
+    cell.addEventListener("click", function(){updateGameState(index)});
+    });
+    resetGame();
+</script>
+
+</html>

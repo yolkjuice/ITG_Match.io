@@ -1,10 +1,31 @@
+[
+	{
+	"title": "", 顶格的字
+	"content": "" 缩进的字放这里，只能有一行，缩进的地方用<dd></dd>围上 换行加<br> 空一行的地方就加两个<br>
+	},
+
+	{
+	"title": "DAY 2",
+	"content": ""
+	},
+
+	{
+	"title": "CSS -- 网页的层叠样式"
+	"content": ""
+	},
+	
+	{
+	"title": "CSS的三种定义地方：" ,
+	"content": "<dd>1.外部式 link rel="stylesheet" href="style.css"<br>2.内部式 <style>...</style><br>3.内联式 <xxx style="style"></dd><br><br>" 
+
+]
 DAY 2
 CSS -- 网页的层叠样式
 
 CSS的三种定义地方：
-	1.外部式 <link rel="stylesheet" href="style/default.css">
+	<dd>1.外部式 <link rel="stylesheet" href="style.css">
 	2.内部式 <style>...</style>
-	3.内联式 <xxx style="style">
+	3.内联式 <xxx style="style"></sdd>
 
 CSS的三种定义方式：
 	1.元素选择器 标签名 {}

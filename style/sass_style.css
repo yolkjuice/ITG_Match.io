@@ -1,3 +1,9 @@
+.bg-img {
+  background-image: url("../img/preview.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .box.box-col {
   display: flex;
   flex-direction: column;
@@ -11,7 +17,7 @@
   margin-bottom: 70px;
 }
 .item.i02 {
-  margin-bottom: 150px;
+  margin-bottom: 120px;
 }
 .item.i03 {
   justify-content: center;
@@ -20,19 +26,22 @@
 
 .mynav ul {
   padding-top: 10px;
-  height: 40px;
+  height: 60px;
   list-style-type: none;
   background-color: #1E90FF;
-  overflow: hidden;
+  border-radius: 10px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, "Liberation Sans";
 }
 .mynav li {
   float: left;
   margin-right: 10px;
-  text-align: justify;
+  padding: 0 20px;
 }
 .mynav li a {
   display: block;
   color: white;
+  text-decoration: none;
+  padding-top: 10px;
 }
 .mynav li a:hover:not(.active) {
   background-color: #ddd;
@@ -42,6 +51,10 @@
   background-color: blue;
 }
 
+img.nav-logo {
+  width: 30px;
+  margin-right: 5px;
+}
 img.photo {
   width: 100px;
   height: 100px;
@@ -136,6 +149,25 @@ button.to-begin {
   padding-left: 20px;
 }
 
+.game {
+  height: 1000px;
+  justify-content: center;
+  align-items: center;
+}
+
+#time {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 700px;
+  padding: 10px 0;
+  width: 120px;
+  border: 2px solid #cdcdcd;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #434343;
+  color: #fff;
+}
+
 .board {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -154,7 +186,7 @@ button.to-begin {
   justify-content: center;
   font-size: 24px;
   font-weight: bold;
-  background-color: #fff7e6;
+  background-color: #e89f21;
   cursor: pointer;
 }
 

@@ -1,18 +1,55 @@
-var board = ["", "", "", "", "", "", "", "", ""];
-var cells = document.getElementsByClassName("cell");
-var result = document.getElementById("result");
-var player = ["X", "O"];
-var gamestate = true;
+var board = ["", "", "", "", "", "", "", "", ""];   //棋盘
+var cells = document.querySelectorAll(".cell");//getElementsByClassName("cell"); 不能用于forEach，返回为对象数组   //格子
+var result = document.getElementById("result"); //旁白
+var player = ["X", "O"];    //玩家
+var currentplayer = player[0]; //当前玩家
+result.textContent = currentplayer;
+var gamestate = true;   //游戏状态
 
-function main() {   //游戏流程
-    
+//时钟
+function getTime() {
+    var time= new Date().toLocaleTimeString();
+    document.getElementById("time").innerHTML = time;
 }
+setInterval(getTime, 100);
+//时钟
 
-cells.forEach((cell, index) => {    //玩家走步
-    cell.addEventListener("click", function(player){
-        board[i] = player;
-    });
-});  
+//棋盘
+cells.forEach(function(cell, index) {   //添加棋盘的点击事件监听事件
+    //console.log(cell, index);
+    cell.addEventListener("click", function(){main(index)});
+});
+
+function main(index) {   //游戏流程
+    //console.log(index);
+    if(gamestate && board[index]===""){  //游戏进行且格子未被下过
+        //落棋
+        board[index] = currentplayer;
+        updateBoard();
+        //console.log(currentplayer, board[index]);
+
+        //判断结束条件 出现胜方或者平局
+        if(checkWinner(player[0])){
+            result.textContent = "玩家 1 获胜！";
+            setTimeout(endGame,1000);
+        }
+        else if(checkWinner(player[1])){
+            result.textContent = "玩家 2 获胜！";
+            setTimeout(endGame,1000);
+        }
+        else if(checkNoWinner()){
+            result.textContent = "平局！";
+            setTimeout(endGame,1000);
+        }
+        //非结束状态
+        else{
+            //交换走步
+            if(currentplayer === player[0]) currentplayer = player[1];
+            else currentplayer = player[0];
+            result.textContent = currentplayer;
+        }
+    }
+} 
 
 function checkWinner(player) {  //判断胜利玩家
     //胜利的矩阵
@@ -29,22 +66,29 @@ function checkWinner(player) {  //判断胜利玩家
 }
 
 function checkNoWinner() { //判断平手
-    var i;
-    for(i=0; i<board.length; i++)
-        if(board === "")
+    for(var i=0; i<board.length; i++)
+        if(board[i] === "")//棋盘满则平手
             return false;
-
+    // if( !("" in board) ) return fasle; //棋盘满则平手
     return true;
+}
+
+function updateBoard() {
+    var i;
+    for(i=0; i<cells.length; i++)
+        cells[i].textContent = board[i];
 }
 
 function endGame() {
     gamestate = false;
+    setTimeout(resetGame,500);
 }
 
 function resetGame() {
-    board = ["", "", "", "", "", "", "", "", ""];
+    board.fill("");
+    updateBoard();
     gamestate = true;
+    currentplayer = player[0];
+    result.textContent = "";
 }
-if(checkWinner(player[0]));
-if(checkWinner(player[1]));
-if(checkNoWinner());
+//棋盘
