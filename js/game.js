@@ -89,6 +89,6 @@ function resetGame() {
     updateBoard();
     gamestate = true;
     currentplayer = player[0];
-    result.textContent = "";
+    result.textContent = currentplayer;
 }
 //棋盘

@@ -1,0 +1,27 @@
+DAY 5
+更多技巧
+
+CSS
+	1.转换
+	属性 transform 可以实现x/y/z轴的旋转等
+
+	2.过渡
+	属性 transition 指定元素变化的样式和过渡时间
+
+	3.动画
+	关键帧 @keyframes {from...to...} 定义关键帧的样式来控制 CSS 动画序列中的中间步骤 
+	
+JS
+	数据请求
+	ajax 
+	创建 var = new XMLHttpRequest()
+	方法 .opne(method, url, async)
+
+	jquery
+	方法 $.getJSON("请求地址","请求参数",function(形参){}
+	打印数据 $(标识).append()
+
+SCSS -- CSS拓展语言
+
+grid -- 为网页布局建立网格系统
+	

@@ -1,6 +1,11 @@
 // index
-.bg-img {
-  background-image: url('../img/preview.jpg');
+body {
+  &.bg-img {
+    background-image: url('../img/preview.jpg');
+  }
+  &.game-bg{
+    background-image: url('../img/game-bg.png');
+  }
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -31,17 +36,46 @@
   }
 }
 
+//欢迎字样
+.welcome-text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 100px;
+  color: rgba(255,255,255,0.8);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 //状态栏
 .status {
-  // display: none;
+  opacity: 0;
   width: 400px;
   height: 100px;
-  background-color: #e6f4ff;
+  background-color: rgba(230, 244, 255,0.8);
+  color: rgba(255,255,255,0);
   border-radius: 50px;
+  margin-left: 250px;
+  text-align: justify;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  transition: 1s;
+}
 
-  // img{
+.show-status {
+  img{
+    float: left;
+    transition: 1s;
+  }
+  
+  &:hover{
+    img{
+      margin-left: 180px;
+    }
 
-  // }
+    .status{
+      opacity: 1;
+      color: #000;
+      margin-left: 300px;
+    }
+  }
 }
 
 // 导航栏
@@ -71,39 +105,38 @@ li a {
     text-align: center;
 }
 
-li a:hover:not(.active) {
-    background-color:#fff;
+li a:hover {
+    &.change {
+      background-color:#fff;
     color: #1E90FF;
-}
-
-li a.active {
-    color: gray;
-    background-color: blue;
+    }
 }
 }
 
 img {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   //导航栏LOGO
   &.nav-logo {
     width: 30px;
-    margin-right: 10px;
+    margin-right: 11px;
+    border: 1px solid rgba(255,255,200,0.5);
+    padding: 1px 1px;
   }
   // 开始页头像
   &.photo {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 5px solid #f5f5f5;
+    border: 5px solid #f5f5f5 ;
     margin-left: 268px;
   }
 
   //开始页链接
   &.gc-link {
     width: 30px;
-    height: 30px;
     border-radius: 50%;
     border: 2px solid #f5f5f5;
-    background-color: #cdcdcd;
+    background-color: #f5f5f5;
     margin-right: 20px;
   }
 
@@ -119,10 +152,12 @@ img {
   &.nav-title{
     float: left;
     width: 30px;
+    box-shadow: none;
   }
 }
 
 button {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   // 开始页按钮
   background-color: #fff;
   &.to-begin{
@@ -163,9 +198,13 @@ button {
 
 // index01
 //简介左右部分
+
 .left-td {
   float: left;
   display: inline;
+  div p{
+    width: 200px;
+  }
 }
 
 .right-td {
@@ -175,6 +214,7 @@ button {
 // index02
 // 笔记导航栏
 .notenav {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   position: fixed;
   overflow: hidden;
   background-color: #fff;
@@ -184,6 +224,7 @@ button {
   border-radius: 10px;
 
   button {
+    box-shadow: none;
     display: block;
     width: 60%;
     height: 30px;
@@ -214,12 +255,13 @@ button {
 }
 
 .note-container {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   overflow: auto;
-  background-color: yellowgreen; 
+  background-color: #fff1b8; 
   width: 800px;
   height: 1000px;
   margin-left: 250px;
-  border: 1px solid #000;
+  border: 5px solid rgba($color: #bae0ff, $alpha: 0.8);
   border-radius: 10px;
 
   font-family: Arial, "Microsoft YaHei";
@@ -232,7 +274,7 @@ button {
 
 //index03
 .game {
-  height: 1000px;
+  height: 700px;
   justify-content: center;
   align-items: center;
 }
@@ -240,9 +282,9 @@ button {
 #time {
   margin-top: 100px;
   margin-bottom: 50px;
-  margin-left: 700px;
+  margin-left: 580px;
   padding: 10px 0;
-  width: 120px;
+  width: 150px;
   border: 2px solid #cdcdcd;
   border-radius: 20px;
   text-align: center;
@@ -263,12 +305,13 @@ button {
 }
 
 .cell {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 24px;
   font-weight: bold;
-  background-color: #e89f21;
+  background-color: #ffc069;
   cursor: pointer;
 }
 
