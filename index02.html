@@ -68,7 +68,52 @@
 <script>
     function loadJSON01(){
         $.getJSON("F://ITG//z-finial//note//day1.json", {}, function(data){
-            // $("#note-container").remove()
+            $("#note-container").empty();
+            for(var i = 0; i < data.length; i++) {
+                $("#note-container").append("<h5 class='font-style'>" + data[i].title + "</h5>"+
+                "<p class='font-style'>" + data[i].content + "</p>");
+            }
+        });
+    }
+    function loadJSON02(){
+        $.getJSON("F://ITG//z-finial//note//day2.json", {}, function(data){
+            $("#note-container").empty();
+            for(var i = 0; i < data.length; i++) {
+                $("#note-container").append("<h5 class='font-style'>" + data[i].title + "</h5>"+
+                "<p class='font-style'>" + data[i].content + "</p>");
+            }
+        });
+    }
+    function loadJSON03(){
+        $.getJSON("F://ITG//z-finial//note//day3.json", {}, function(data){
+            $("#note-container").empty();
+            for(var i = 0; i < data.length; i++) {
+                $("#note-container").append("<h5 class='font-style'>" + data[i].title + "</h5>"+
+                "<p class='font-style'>" + data[i].content + "</p>");
+            }
+        });
+    }
+    function loadJSON04_1(){
+        $.getJSON("F://ITG//z-finial//note//day4-1.json", {}, function(data){
+            $("#note-container").empty();
+            for(var i = 0; i < data.length; i++) {
+                $("#note-container").append("<h5 class='font-style'>" + data[i].title + "</h5>"+
+                "<p class='font-style'>" + data[i].content + "</p>");
+            }
+        });
+    }
+    function loadJSON04_2(){
+        $.getJSON("F://ITG//z-finial//note//day4-2.json", {}, function(data){
+            $("#note-container").empty();
+            for(var i = 0; i < data.length; i++) {
+                $("#note-container").append("<h5 class='font-style'>" + data[i].title + "</h5>"+
+                "<p class='font-style'>" + data[i].content + "</p>");
+            }
+        });
+    }
+    function loadJSON05(){
+        $.getJSON("F://ITG//z-finial//note//day5.json", {}, function(data){
+            $("#note-container").empty();
             for(var i = 0; i < data.length; i++) {
                 $("#note-container").append("<h5 class='font-style'>" + data[i].title + "</h5>"+
                 "<p class='font-style'>" + data[i].content + "</p>");
@@ -78,5 +123,10 @@
 </script>
 <!-- 引入要放在后面 -->
 <script type="text/javascript" src="F:\ITG\z-finial\note\day1.json"></script>
+<script type="text/javascript" src="F:\ITG\z-finial\note\day2.json"></script>
+<script type="text/javascript" src="F:\ITG\z-finial\note\day3.json"></script>
+<script type="text/javascript" src="F:\ITG\z-finial\note\day4-1.json"></script>
+<script type="text/javascript" src="F:\ITG\z-finial\note\day4-2.json"></script>
+<script type="text/javascript" src="F:\ITG\z-finial\note\day5.json"></script>
 <!-- 装载内容 -->
 </html>

@@ -1,0 +1,18 @@
+[
+{
+"title": " DAY 3",
+"content": ""
+},
+{
+"title": " CSS -- Flex布局：规定一个flex容器内的元素按主轴和交叉轴方式对齐",
+"content": "<dd>1.flex布局使用：display：flex<br><br>2.对齐方式：<br>按主轴 justify-content: <br>start 主轴起点<br>center 主轴中点<br>end 主轴终点<br>space-between 主轴两侧<br>space-around：间隔相等<br><br>按交叉轴 align-items: <br>start 交叉轴起点<br>center 交叉轴中点<br>end 交叉轴终点<br>stretch 默认值<br><br>3.换行：flex-wrap: <br>nowrap（默认值）不换行<br>wrap 换行<br>wrap-reverse 反转换行</dd><br><br>"
+},
+{
+"title": "Item项目：flex容器里的元素 ", 
+"content": "<dd>1.排列顺序：order: number>=0 数字越小，顺序越前<br><br>指定元素：:first-child/last-child/nth-child(n)<br>)<br>2.放大比例：flex-grow: 0（默认值）/1 剩余空间时是否放大<br><br>3.缩小比例：flex-shrink: 1（默认值）/0 空间不足时是否缩小<br><br>4.独立对齐方式：justify/align-self:<br>auto（默认值）：继承align-items/stretch<br>flex-start 对应轴起点<br>center 对应轴中点<br>flex-end 对应轴终点<br>*也可指定元素<br></dd><br><br>"
+},
+{
+"title": "课外资源:",
+"content": "Bootstrap 简洁、直观、强悍的前端开发框架"
+}
+]

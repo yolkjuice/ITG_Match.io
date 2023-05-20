@@ -1,0 +1,34 @@
+[
+{
+"title": "DAY 5",
+"content": ""
+},
+
+{
+"title": "更多技巧",
+"content": ""
+},
+
+{
+"title": "CSS",
+"content": "<dd>1.转换<br>属性 transform 可以实现x/y/z轴的旋转等<br><br>2.过渡<br>属性 transition 指定元素变化的样式和过渡时间<br><br>3.动画<br>关键帧 @keyframes {from...to...} 定义关键帧的样式来控制 CSS 动画序列中的中间步骤</dd><br><br>"
+},
+
+{
+"title": "JS",
+"content": "<dd>数据请求<br>ajax<br>创建 var = new XMLHttpRequest()<br>方法 .opne(method, url, async)<br><br>jquery<br>方法 $.getJSON(请求地址,请求参数,function(形参){}<br>打印数据 $(标识).append()</dd><br><br>"
+},
+
+{
+"title": "SCSS -- CSS拓展语言",
+"content": ""
+},
+
+{
+"title": "grid -- 为网页布局建立网格系统",
+"content": ""
+}
+
+]
+
+	

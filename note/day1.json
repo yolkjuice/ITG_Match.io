@@ -10,10 +10,10 @@
 	},
 	{
 		"title": "HTML --标签 -- 构成网页的元素",
-		"content": "html标签：定义一个网页/头部/主体 <br>&emsp;html<br>&emsp;head<br>&emsp;body<br><br>块级标签 div/行内标签 span:或者使用属性style=\"display:inline;\" 以行内显示style=\"dispaly:block;\"  以块级显示<br><br>链接标签 a:连接到锚点  跳转到改网页某部分<br>&emsp;span name=\"xxx\"<br>&emsp;div id=\"xxx\"<br>&emsp;a href=\"#xxx\"<br><br>表单标签 form/input：收集信息<br>&emsp;form&emsp;input<br><br>按钮标签 button：创建一个按钮<br>&emsp;button<br><br>格式标签 b/i/u/del/sub/sup：设置字体格式<br>&emsp;b bold 加粗<br>&emsp;i 斜体<br>&emsp;u 下划线<br>&emsp;del 删除线<br>&emsp;sub/sup 下标/上标<br><br>图片标签 img：插入图片<br>&emsp;img<br><br>列表标签 ul/ol/li：信息集成列表<br>&emsp;ul 无序列表 <br>&emsp;ol 有序列表<br>&emsp;li 列表项<br><br>表格标签 table/tr/th/td：创建表格<br>&emsp;table 总体<br>&emsp;tr 表行<br>&emsp;th 表头<br>&emsp;td 单元格<br><br>*标签嵌套：<br>&emsp;例如：ul>li li元素嵌套在ul元素内<br>&emsp;&emsp;tr>td td元素嵌套在tr元素内"
+		"content": "<dd>html标签：定义一个网页/头部/主体 <br> html<br> head<br> body<br><br>块级标签 div/行内标签 span:或者使用属性style=\"display:inline\" 以行内显示style=\"dispaly:block\"  以块级显示<br><br>链接标签 a:连接到锚点  跳转到改网页某部分<br> span name=\"xxx\"<br> div id=\"xxx\"<br> a href=\"#xxx\"<br><br>表单标签 form/input：收集信息<br> form input<br><br>按钮标签 button：创建一个按钮<br> button<br><br>格式标签 b/i/u/del/sub/sup：设置字体格式<br> b bold 加粗<br> i 斜体<br> u 下划线<br> del 删除线<br> sub/sup 下标/上标<br><br>图片标签 img：插入图片<br> img<br><br>列表标签 ul/ol/li：信息集成列表<br> ul 无序列表 <br> ol 有序列表<br> li 列表项<br><br>表格标签 table/tr/th/td：创建表格<br> table 总体<br> tr 表行<br> th 表头<br> td 单元格<br><br>*标签嵌套：<br> 例如：ul>li li元素嵌套在ul元素内<br>  tr>td td元素嵌套在tr元素内</dd><br><br>"
 	},
 	{
 		"title": "属性 -- 标签的简单样式",
-		"content": "样式属性 style=\"width/height/padding/margin/...\"<br><br>对齐方式 align=\"left(default)/center/right/justify(调整到合适)\"<br><br>表单属性 form action=\"url\" method=\"get/post\"<br>&emsp;input type=\"表单类型\" name=\"name\" value=\"value\"<br><br>按钮属性 button type=\"按钮类型\"<br><br>图片属性 <img src=\"url\" alt=\"替代文字\"><br><br>列表属性 <ol type=\"序号形式\"><br>&emsp;<ul type=\"序号形式suqare/circle/...\"><br><br>表格属性 table border=\"0(default)/1\" 开启边框<br>&emsp;td rowspan=\"n\" n列合并 colspan=\"n\" n行合并"
+		"content": "<dd>样式属性 style=\"width/height/padding/margin/...\"<br><br>对齐方式 align=\"left(default)/center/right/justify(调整到合适)\"<br><br>表单属性 form action=\"url\" method=\"get/post\"<br> input type=\"表单类型\" name=\"name\" value=\"value\"<br><br>按钮属性 button type=\"按钮类型\"<br><br>图片属性 img src=\"url\" alt=\"替代文字\"<br><br>列表属性 ol type=\"序号形式\"<br> ul type=\"序号形式suqare/circle/...\"<br><br>表格属性 table border=\"0(default)/1\" 开启边框<br> td rowspan=\"n\" n列合并 colspan=\"n\" n行合并</dd>"
 	}
 ]
