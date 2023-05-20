@@ -38,6 +38,7 @@ h2 {
 }
 
 footer{
+    font-family: "阿里巴巴普惠体 2.0 55 Regular";font-weight: 400;
     padding: 1rem;
     background-color: aliceblue;
 }
@@ -51,3 +52,22 @@ footer li{
     font-size: small;
     color: rgba(0,0,0,0.8);
 }
+
+/* //设置字体 */
+@font-face {
+    font-family: "阿里妈妈数黑体 Bold";font-weight: 700;src: url("//at.alicdn.com/wf/webfont/aEoyM2aV9cex/VRz5rFAwJvJy.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/aEoyM2aV9cex/8bViu624LZPb.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "阿里巴巴普惠体 2.0 55 Regular";font-weight: 400;
+    src: url("../style/阿里巴巴普惠体 2.0/Alibaba_PuHuiTi_2.0_55_Regular_55_Regular.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "阿里妈妈东方大楷 Regular";font-weight: 400;src: url("./style/阿里妈妈东方大楷/Alimama_DongFangDaKai_Regular.woff2") format("woff2"),
+    url("../style/阿里妈妈东方大楷/Alimama_DongFangDaKai_Regular.woff") format("woff");
+    font-display: swap;
+  }
