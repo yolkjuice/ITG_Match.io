@@ -129,4 +129,17 @@
 <script type="text/javascript" src="F:\ITG\z-finial\note\day4-2.json"></script>
 <script type="text/javascript" src="F:\ITG\z-finial\note\day5.json"></script>
 <!-- 装载内容 -->
+    <script src="./js/jquery.js"></script>
+    <script>
+        // 判断屏幕宽度，动态设置视口，如果是大屏幕就不设置
+        if(window.screen.width < 360) {
+            $('head').append('<meta name="viewport" content="width=1280">')
+        } else if(window.screen.width < 1366) {
+            $('head').remove('[name="viewport"]')
+            $('head').append('<meta name="viewport" content="width=1366">')
+        }
+        else {
+            $('head').remove('[name="viewport"]')
+        }
+    </script>
 </html>

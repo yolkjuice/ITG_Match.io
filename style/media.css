@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+        .mynav ul li.change {
+            display: none;
+        }
+}

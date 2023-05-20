@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <link rel="stylesheet" href="./style/fault.css">
+    <link rel="stylesheet" href="./style/sass_style.css">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-img">
+    <!-- 网格系统 3-6-3 -->
+    <div class="container">
+        <!-- 导航栏 -->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-12 mynav">
+                <ul> 
+                    <li style="font-weight: bold;"><a href="./index.html"><img src="./img/蛋黄酥.svg" alt="logo" class="nav-logo">York</a></li>
+                    <li ><a href="./index01.html" class="change">个人简介</a></li>
+                    <li><a href="./index02.html" class="change">学习笔记</a></li>
+                    <li><a href="./index03.html" class="change">井字游戏</a></li>
+                </ul>
+            </div>
+            <div class="col"></div>
+        </div>
+        <!-- 导航栏 -->
+        <!-- 内容 -->
+        <div class="row">
+            <div class="col"></div>
+
+            <!-- 盒子 -->
+            <div class="col-6 box box-col">
+                <div style="height: 200px;" class="welcome-text">Welcome</div>
+                <div  class=" box box-col" style="height: 450px;">
+                    <div class="item i01 box-col show-status">
+                        <img src="./img/shushu.png" alt="我的照片" class="photo">
+                        <div class="status">
+                            <p style="padding: 15px 30px; padding-bottom: 0px;">
+                                <span style="font-weight:600 ;">鼠鼠学士</span>
+                                <span style="font-size: small;color: gray;">#沉淀#顶峰相见</span>
+                            </p>
+                            <p style="padding: 0px 30px;">
+                                天高任鸟飞，海阔凭鱼跃
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item i02">
+                        <button class="to-begin"><a href="./index01.html">开始浏览</a></button>
+                    </div>
+                    <div class="item i03 box box-row">
+                        <a href="https://github.com/yolkjuice"><img src="./img/GitHub.svg" alt="github" class="gc-link"></a>
+                        <a href="https://blog.csdn.net/Yolk_Juice?spm=1000.2115.3001.5343"><img src="./img/csdn.svg" alt="csdn" class="gc-link"></a>
+                        <a href="#"><img src="./img/13A省略.png" alt="..." class="gc-link"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- 盒子 -->
+
+            <div class="col"></div>
+        </div>
+        <!-- 内容 -->
+    </div>
+     <!-- 网格系统3-6-3 -->
+</body>
+    <script src="../js/jquery.js"></script>
+    <script>
+        // 判断屏幕宽度，动态设置视口，如果是大屏幕就不设置
+        if(window.screen.width < 360) {
+            $('head').append('<meta name="viewport" content="width=1280">')
+        } else if(window.screen.width < 1366) {
+            $('head').remove('[name="viewport"]')
+            $('head').append('<meta name="viewport" content="width=1366">')
+        }
+        else {
+            $('head').remove('[name="viewport"]')
+        }
+    </script>
+</html>

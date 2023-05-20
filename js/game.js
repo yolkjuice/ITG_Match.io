@@ -9,7 +9,8 @@ var gamestate = true;   //游戏状态
 //时钟
 function getTime() {
     var time= new Date().toLocaleTimeString();
-    document.getElementById("time").innerHTML = time;
+    var h2_time = document.getElementById("time");
+    h2_time.innerHTML = time;
 }
 setInterval(getTime, 100);
 //时钟

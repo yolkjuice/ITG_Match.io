@@ -29,12 +29,15 @@ body {
 
 //开始页各项目
 .item {
-  
+  display: flex;
   &.i01{
-    margin-bottom: 70px;
+    margin-bottom: 150px;
+    display: inline;
+    justify-content: end;
   }
   &.i02{
-    margin-bottom: 120px;
+    margin-bottom: 150px;
+    justify-content: center;
   }
   &.i03{
     justify-content: center;
@@ -116,7 +119,7 @@ li a {
 li a:hover {
     &.change {
       background-color:#fff;
-    color: #1E90FF;
+      color: #1E90FF;
     }
 }
 }
@@ -136,7 +139,8 @@ img {
     height: 100px;
     border-radius: 50%;
     border: 5px solid #f5f5f5 ;
-    margin-left: 268px;
+    position: relative;
+    margin-left: 40%;
   }
 
   //开始页链接
@@ -172,7 +176,7 @@ button {
   &.to-begin{
     width: 150px;
     height: 50px;
-    margin-left: 243px;
+    //margin-left: 243px;
     border: 2px solid white;
     border-radius: 20px;
 
@@ -292,9 +296,6 @@ button {
 }
 
 #time {
-  margin-top: 100px;
-  margin-bottom: 50px;
-  margin-left: 580px;
   padding: 10px 0;
   width: 150px;
   border: 2px solid #cdcdcd;

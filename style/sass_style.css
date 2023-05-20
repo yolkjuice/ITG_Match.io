@@ -22,11 +22,17 @@ body.game-bg {
   flex-direction: row;
 }
 
+.item {
+  display: flex;
+}
 .item.i01 {
-  margin-bottom: 70px;
+  margin-bottom: 150px;
+  display: inline;
+  justify-content: end;
 }
 .item.i02 {
-  margin-bottom: 120px;
+  margin-bottom: 150px;
+  justify-content: center;
 }
 .item.i03 {
   justify-content: center;
@@ -112,7 +118,8 @@ img.photo {
   height: 100px;
   border-radius: 50%;
   border: 5px solid #f5f5f5;
-  margin-left: 268px;
+  position: relative;
+  margin-left: 40%;
 }
 img.gc-link {
   width: 30px;
@@ -142,7 +149,6 @@ button {
 button.to-begin {
   width: 150px;
   height: 50px;
-  margin-left: 243px;
   border: 2px solid white;
   border-radius: 20px;
 }
@@ -250,9 +256,6 @@ button.to-begin:hover a::after {
 }
 
 #time {
-  margin-top: 100px;
-  margin-bottom: 50px;
-  margin-left: 580px;
   padding: 10px 0;
   width: 150px;
   border: 2px solid #cdcdcd;

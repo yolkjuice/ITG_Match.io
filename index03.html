@@ -29,9 +29,9 @@
         <!-- 导航栏 -->
 
         <!-- 主要内容 -->
-        <div class="box-row game">
+        <div class="box-col game">
             <!-- 时钟 -->
-            <h2 id="time"></h2>
+            <div style="margin-top: 100px;margin-bottom: 50px;"><h2 id="time" style="margin: auto;"></h2></div>
             <!-- 棋盘 -->
             <div class="board">
                 <div class="cell"></div>
@@ -56,4 +56,17 @@
     </footer>
 </body>
 <script src="./js/game.js"></script>
+<script src="./js/jquery.js"></script>
+<script>
+    // 判断屏幕宽度，动态设置视口，如果是大屏幕就不设置
+    if(window.screen.width < 360) {
+        $('head').append('<meta name="viewport" content="width=1280">')
+    } else if(window.screen.width < 1366) {
+        $('head').remove('[name="viewport"]')
+        $('head').append('<meta name="viewport" content="width=1366">')
+    }
+    else {
+        $('head').remove('[name="viewport"]')
+    }
+</script>
 </html>
