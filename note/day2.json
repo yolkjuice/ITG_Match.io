@@ -1,0 +1,38 @@
+[
+	{
+	"title": "DAY 2",
+	"content": ""
+	},
+
+	{
+	"title": "CSS -- 网页的层叠样式"
+	"content": ""
+	},
+	
+	{
+	"title": "CSS的三种定义地方：" ,
+	"content": "<dd>1.外部式 link rel="stylesheet" href="style.css"<br>2.内部式 <style>...</style><br>3.内联式 <xxx style="style"></dd><br><br>" 
+	}，
+{
+"title": "CSS的三种定义方式：", 
+"content": "<dd>1.元素选择器 标签名 {}<br>2.类选择器  .className {}<br>3.id选择器 #idName {}</dd><br><br>"
+}，
+
+{
+"title": "CSS的三种调用方式：", 
+"content": "<dd>1.直接用于标签<br>2.类 <... class= ><br>3.id <... id=""></dd><br><br>"
+}，
+
+{
+"title": "CSS选择器组合方式：", 
+"content": "<dd>1.elemt.className/#idName 类名或id名的元素<br>2.并列 elemt1/elemt2/elemt3 享有一样的样式<br>3.子元素选择器 paret > child 父元素下的所有直接子元素<br>4.后代选择器 elemt1 elemt2 elemt1元素下的所有elemt2元素</dd><br><br>"
+},
+
+{
+	"title": "CSS常见的样式：", 
+"content": "<dd>1.盒子模型：每个元素都是一个盒子<br>属性：margin 外边距/border 边框/ padding 内边距/content 内容<br><br>2.媒体请求：针对不同媒体类型可以定制不同的样式规则<br>@media (样式变化时的尺寸) {样式...}<br><br>3.文本设置：<br>font-size 文本大小<br>font-family 文本类型<br>font-style	文本格式<br>font-weight 文本粗细<br>text-transform 文本大小写转换<br>text-align 文本对齐方式</dd><br><br>"
+},
+
+]
+
+	
